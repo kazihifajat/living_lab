@@ -1,0 +1,127 @@
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6f9;
+}
+
+/* HEADER */
+
+.header{
+background:white;
+height:70px;
+display:flex;
+align-items:center;
+padding:0 20px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+position:fixed;
+width:100%;
+z-index:1000;
+}
+
+.header img{
+margin-right:10px;
+}
+
+.header h2{
+margin:0;
+font-size:22px;
+}
+
+/* MENU BUTTON */
+
+.menu-btn{
+font-size:22px;
+margin-right:15px;
+cursor:pointer;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+position:fixed;
+top:70px;
+left:0;
+width:220px;
+height:100%;
+background:#2c3e50;
+padding:20px;
+color:white;
+transition:all 0.3s;
+}
+
+.sidebar.closed{
+left:-220px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+margin-bottom:10px;
+padding:8px;
+border-radius:5px;
+}
+
+.sidebar a:hover{
+background:#34495e;
+}
+
+/* MAIN */
+
+.main{
+margin-left:240px;
+padding:20px;
+margin-top:80px;
+transition:all 0.3s;
+}
+
+.main.full{
+margin-left:20px;
+}
+
+/* MAP */
+
+#map{
+height:75vh;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* CONTROL PANEL */
+
+.controls{
+position:absolute;
+top:120px;
+right:20px;
+background:white;
+padding:15px;
+border-radius:6px;
+box-shadow:0 2px 8px rgba(0,0,0,0.3);
+z-index:1000;
+font-size:14px;
+}
+
+/* LEGEND */
+
+.legend{
+position:absolute;
+bottom:20px;
+left:260px;
+background:white;
+padding:10px;
+border-radius:6px;
+box-shadow:0 2px 6px rgba(0,0,0,0.3);
+font-size:14px;
+z-index:1000;
+}
+
+/* FOOTER */
+
+footer{
+margin-left:240px;
+padding:15px;
+text-align:center;
+background:white;
+border-top:1px solid #ddd;
+margin-top:20px;
+}
